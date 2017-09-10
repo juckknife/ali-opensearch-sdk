@@ -1,5 +1,5 @@
 {
-    "name": "lingxi/ali-opensearch-sdk",
+    "name": "juckknife/ali-opensearch-sdk",
     "autoload": {
         "psr-4": {
             "Lingxi\\AliOpenSearch\\": "src/"
