@@ -280,13 +280,6 @@ class CloudsearchClient
             $result = json_decode($this->_socket($url, $params, $method), true);
         }
 
-        if ($result['status'] != 'OK') {
-            $e = new OpensearchRunException($result['errors'][0]['message'], $result['errors'][0]['code']);
-            $e->setErrors($result['errors']);
-
-            throw $e;
-        }
-
         return $result;
     }
 
